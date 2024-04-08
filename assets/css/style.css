@@ -6,6 +6,11 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.75;
 }
+.gradient {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+  height: 80px;
+  margin: 0px 0px -80px 0px;
+}
 header {
 background: #000000 url(../img/header.png) top center no-repeat;
   line-height: 1;
@@ -18,13 +23,64 @@ background: #000000 url(../img/header.png) top center no-repeat;
 }
 
 nav {
+    padding-top: 15px;
 }
 
 nav a {
   color: #e5e5e5;
   text-decoration: none;
   display: inline-block;
-  margin: 0px 20px 0px 0px;
   padding: 10px 5px;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  width: 5%;
 }
+
+nav a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn.btn-success {
+    background: rgb(61, 75, 39);
+    color: rgb(166, 205, 99);
+}
+
+.btn {
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 0;
+    border: 0;
+    padding: 8px 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  .btn-shop {
+    background: rgb(29, 66, 95);
+  color: rgb(72, 154, 212);
+  }
+  .btn-shop:hover {
+    background: rgb(39, 85, 121);
+  }
+  
+  .btn-success:hover {
+    background: rgb(88, 108, 57);
+    border-color: #146c43;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-top: -4px;
+  }
+  img, svg {
+    vertical-align: middle;
+  }
