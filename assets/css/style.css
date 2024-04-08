@@ -55,7 +55,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-.btn.bttn-connect {
+.bttn.bttn-connect {
     background: rgb(61, 75, 39);
     color: rgb(166, 205, 99);
 }
@@ -92,6 +92,9 @@ nav a:hover {
   .btn-shop:hover {
     background: rgb(39, 85, 121);
   }
+  a:hover {
+    color: rgb(72, 154, 212) !important;
+  }
 
   .btn-discord {
     background: #282b30;
@@ -99,11 +102,13 @@ nav a:hover {
   }
   .btn-discord:hover {
     background: #383e47;
+    color: #7289da !important;
   }
   
-  .btn-success:hover {
+  .bttn-connect:hover {
     background: rgb(88, 108, 57);
     border-color: #146c43;
+    color: rgb(166, 205, 99) !important;
   }
 
   .icon {
