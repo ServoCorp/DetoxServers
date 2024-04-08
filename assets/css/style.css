@@ -12,14 +12,19 @@ body {
   margin: 0px 0px -80px 0px;
 }
 header {
-background: #000000 url(../img/header.png) top center no-repeat;
+background: #000000 url(../img/header.jpg) center no-repeat ;
   line-height: 1;
   text-align: center;
   padding: 0px 0px 110px 0px;
+  
 }
 .logo img {
     height: 240px;
     width: auto;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 nav {
@@ -70,6 +75,14 @@ nav a:hover {
   .btn-shop:hover {
     background: rgb(39, 85, 121);
   }
+
+  .btn-discord {
+    background: #282b30;
+    color: #7289da;
+  }
+  .btn-discord:hover {
+    background: #383e47;
+  }
   
   .btn-success:hover {
     background: rgb(88, 108, 57);
@@ -84,3 +97,9 @@ nav a:hover {
   img, svg {
     vertical-align: middle;
   }
+
+  @keyframes logo {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
