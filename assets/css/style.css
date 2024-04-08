@@ -1,10 +1,11 @@
 body {
   margin: 0;
-  background: #263238;
+  background: rgb(20, 24, 20);
   color: #dadada;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.75;
+  background-color: rgb(20, 24, 20) !important;
 }
 .gradient {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
@@ -26,6 +27,13 @@ background: #000000 url(../img/header.jpg) center no-repeat ;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+.welcome {
+  text-align: center;
+  color: rgb(231, 224, 218);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+}
 
 nav {
     padding-top: 15px;
@@ -39,6 +47,7 @@ nav a {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
   font-size: 20px;
   width: 5%;
+  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -46,12 +55,20 @@ nav a:hover {
   cursor: pointer;
 }
 
-.btn.btn-success {
+.btn.bttn-connect {
     background: rgb(61, 75, 39);
     color: rgb(166, 205, 99);
 }
-
 .btn {
+  border-radius: 0 !important;
+  border: 0;
+  padding: 8px 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.bttn {
     display: inline-block;
     line-height: 1.5;
     text-align: center;
@@ -103,3 +120,60 @@ nav a:hover {
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }    
 }
+.rules {
+    background: rgb(20, 24, 20);
+    max-width: 1320px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+  }
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .rules .rules-heading {
+    color: rgb(220, 211, 202);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .rules .accordion-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 0;
+    border-radius: 0 !important;
+  }
+  .rules .accordion-header {
+    background: rgba(255, 255, 255, 0.025);
+  }
+  .rules .accordion-header .accordion-button {
+    background: transparent;
+    color: rgb(220, 211, 202);
+    outline: none;
+    box-shadow: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 20px 26px;
+  }
+  .rules .accordion-header .accordion-button .icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-top: -2px;
+    color: rgb(166, 205, 99);
+  }
+  .accordion-body {
+    padding: 1rem 1.25rem;
+    color: #fff;
+  }
