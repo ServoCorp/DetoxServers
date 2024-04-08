@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background: #263238;
+  color: #dadada;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.75;
+}
+header {
+background: #000000 url(../img/header.png) top center no-repeat;
+  line-height: 1;
+  text-align: center;
+  padding: 0px 0px 110px 0px;
+}
+.logo img {
+    height: 240px;
+    width: auto;
+}
+
+nav {
+}
+
+nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 20px 0px 0px;
+  padding: 10px 5px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
